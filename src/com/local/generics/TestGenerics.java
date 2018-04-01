@@ -1,0 +1,10 @@
+package com.local.generics;
+
+public class TestGenerics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
