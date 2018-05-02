@@ -48,7 +48,7 @@ public class TransientDemo implements Serializable{
 	 */
 	public static void main(String[] args) {
 
-		TransientDemo nameStore = new TransientDemo("Steve", "Middle","Jobs");
+		TransientDemo nameStore = new TransientDemo("Steve", "transient","Jobs");
 		try {
 	        ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream("nameStore"));
 	        // writing to object
