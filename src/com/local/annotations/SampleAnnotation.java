@@ -11,8 +11,17 @@ import java.lang.annotation.Target;
 
 /**
  * @author gaurav's
+ * 
+ * @Retention = here retention explains, upto when the 
+ * the value of the interface will be retained like runtime, 
+ * compile time.
+ *
+ *@Target = shows the interface can be used on class level
+ *or methods level.
  *
  */
+
+
 
 @Documented
 @Target(ElementType.METHOD)
