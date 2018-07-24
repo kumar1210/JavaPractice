@@ -31,7 +31,7 @@ public class RunnableLatch implements Runnable {
 
 		System.out.println("Thread Started "+Thread.currentThread().getName() + " at "+ new Date());
 		try {
-			//Thread.sleep(1000);
+			Thread.sleep(1000);
 			latch.countDown();
 		} catch (Exception e) {
 			System.out.println("Error "+e);

@@ -23,7 +23,7 @@ public class TestSingleton {
 	 */
 	public static void main(String[] args) {
 
-		destroySingleton();
+	//	destroySingleton();
 		testSerializedSingleton();
 		
 	}
@@ -46,7 +46,7 @@ public class TestSingleton {
 			input.close();
 			LocalPrinter.printer("HashCode after deserializing "+obj1.hashCode());
 		} catch (Exception e) {
-			LocalPrinter.printer("Exception while serialize-deserialize "+e.getLocalizedMessage());
+			LocalPrinter.printer("Exception while serialize-deserialize "+e.getLocalizedMessage() + "\n" +e.getMessage());
 		}
 		
 	}

@@ -12,7 +12,7 @@ import localjar.LocalPrinter;
  * access modifiers.
  *
  */
-public class ParentClass {
+public class ParentClass implements Cloneable{
 	
 	int j=0;
 	
@@ -50,5 +50,11 @@ public class ParentClass {
 		return String.valueOf(j);
 	}
 	
+	
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		
+		return super.clone();
+	}
 	
 }

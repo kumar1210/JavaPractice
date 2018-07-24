@@ -4,8 +4,11 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import localjar.LocalPrinter;
 
@@ -28,6 +31,28 @@ public class Test {
 		//checkLowerPrecisionValue();
 		//checkHashSetIndexingWithHashCode();
 		//testValueIterator();
+		Map<String, Integer> map = new ConcurrentHashMap<>();
+		System.out.println(map.put("Key1", 1));
+		System.out.println(map.put("Key2", 2));
+		System.out.println(map.put("Key1", 3));
+		System.out.println(map.get("Key1"));
+		System.out.println(map.remove("Key2"));
+		
+		CopyOnWriteArrayList<String> threadSafeList = new CopyOnWriteArrayList<String>();
+        threadSafeList.add("Java");
+        threadSafeList.add("J2EE");
+        threadSafeList.add("Collection");
+        
+        Iterator<String> failSafeIterator = threadSafeList.iterator();
+        while(failSafeIterator.hasNext()){
+            System.out.printf("Read from CopyOnWriteArrayList : %s %n", failSafeIterator.next());
+            //failSafeIterator.remove(); //not supported in CopyOnWriteArrayList in Java
+        }
+        
+        String[] array = {"geeksf", "geeks", "geeksfor", "geeksforgeeks"};
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+        
 	}
 	
 	/****
@@ -55,7 +80,6 @@ public class Test {
 		
 		for(int i =0; i<10; i++) {
 			LocalPrinter.printer("loop started ----------");
-		
 			Set<ParentClass> obj = new HashSet<ParentClass>(3,1);
 			ParentClass parent  =  new ParentClass(10);
 			ParentClass parent1 = new ParentClass(11);
@@ -175,7 +199,6 @@ public class Test {
 
 		byte bit = (byte) 111111;
 		int converted = (int)bit;
-		
 		LocalPrinter.printer("Byte : "+bit +" int : "+converted);
 		
 		ChildClass obj = new ChildClass();

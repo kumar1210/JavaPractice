@@ -13,7 +13,7 @@ import java.util.Iterator;
  * 		<p> Class should be final 
  * 		<p> instances should be private.
  * 		<p> don't provide setter methods 
- * 		<p> let the instances should be final and get it initialized with constructor
+ * 		<p> let the instances should be final and get it initialized with constructor <optional>
  * 		<p> return a clone copy in getters, rather returning the object directly.
  * 		<p> Initialize values, by performing deep copy.
  * 

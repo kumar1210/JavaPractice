@@ -10,7 +10,7 @@ import localjar.LocalPrinter;
  *
  ** <p> for a class being a singleton, it should have 
  * 		1) private constructor
- * 		2) static field
+ * 		2) static field of class type
  * 		3) a static getter or method to get the instance.
  */
 public class ThreadSafeSingleton {

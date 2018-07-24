@@ -1,5 +1,13 @@
-package com.local.threading;
+package com.local.examples;
 
+
+
+/****
+ * 
+ * @author gaurav's
+ * <p>
+ * <uri>https://dzone.com/articles/java-volatile-keyword-0
+ */
 public class TestVolatile {
 
 	private static volatile int MY_INT = 0;

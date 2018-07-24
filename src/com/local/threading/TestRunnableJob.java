@@ -3,8 +3,6 @@
  */
 package com.local.threading;
 
-import java.util.HashMap;
-
 /**
  * @author gaurav's
  * 
@@ -27,6 +25,7 @@ public class TestRunnableJob {
 		Thread thread4 = new Thread(job2, "T4");
 		try {
 			thread1.start();
+			Thread.yield();
 			thread1.join();
 			thread2.start();
 			thread2.join();
