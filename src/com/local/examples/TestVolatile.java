@@ -7,6 +7,12 @@ package com.local.examples;
  * @author gaurav's
  * <p>
  * <uri>https://dzone.com/articles/java-volatile-keyword-0
+ * 
+ * <p> volatile keyword is important in multithreading architecture, because
+ * 		when one thread is trying to access/modify other threads instance variables
+ * 		there might be the case where the other thread have it local cache of that 
+ *		variables and ignore the updates. but making those variables volatile will 
+ *		effectively update the local variable cache in the thread.
  */
 public class TestVolatile {
 

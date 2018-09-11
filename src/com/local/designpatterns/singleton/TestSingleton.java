@@ -56,7 +56,7 @@ public class TestSingleton {
 	 * by using reflection methodology.
 	 * Check the output hashcode of 3rd object will be different from 1st & 2nd.
 	 */
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "unused" })
 	private static void destroySingleton() {
 
 		SingletonWithStatic obj1 = SingletonWithStatic.getInstance();
