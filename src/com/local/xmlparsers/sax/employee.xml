@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employees>
+	<Employee id="1">
+		<age>27</age>
+		<name>Gaurav</name>
+		<gender>Male</gender>
+		<role>Java Developer</role>
+	</Employee>
+	<Employee id="2">
+		<age>29</age>
+		<name>Deepty</name>
+		<gender>Female</gender>
+		<role>HR</role>
+	</Employee>
+	<Employee id="3">
+		<age>32</age>
+		<name>Anand</name>
+		<gender>Male</gender>
+		<role>Manager</role>
+	</Employee>
+	<Employee id="4">
+		<age>35</age>
+		<name>Ashish</name>
+		<gender>Male</gender>
+		<role>BusinessMan</role>
+	</Employee>
+</Employees>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<School>
+	<Classes>
+		<Class>
+			<Name>Fourth Year</Name>
+			<Sections>
+				<Section>
+					<Name>A</Name>
+					<Students>
+						<Student>GAURAV</Student>
+						<Student>ANKUSH</Student>
+						<Student>AMIT</Student>
+					</Students>
+				</Section>
+				<Section>
+					<Name>B</Name>
+					<Students>
+						<Student>RAKESH</Student>
+						<Student>SUMIT</Student>
+						<Student>VIDHU</Student>
+					</Students>
+				</Section>
+			</Sections>
+		</Class>
+	</Classes>
+</School>
