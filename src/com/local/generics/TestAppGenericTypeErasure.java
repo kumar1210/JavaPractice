@@ -1,7 +1,7 @@
 /**
  * 
  */
-package local.dev.generics;
+package com.local.generics;
 
 import java.io.Serializable;
 import java.util.LinkedList;

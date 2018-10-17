@@ -1,7 +1,7 @@
 /**
  * 
  */
-package local.dev.generics;
+package com.local.generics;
 
 /**
  * @author gk97758
